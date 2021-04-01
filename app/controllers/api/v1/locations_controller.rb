@@ -1,6 +1,10 @@
 class Api::V1::LocationsController < ApiController
 	before_action :set_location
 
+	def index
+		@locations = Location.all
+	end
+
 	def show
 
 	end
